@@ -1,0 +1,411 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,cyrillic);
+
+*{margin:0;padding:0;}
+
+a{text-decoration:none;}
+
+body{
+	width:960px;
+	margin:15px auto;
+	border: 2px solid #eee;
+	border-radius: 6px;
+	padding: 5px;
+}
+
+#page_header a:first-child{
+	display: inline-block;
+}
+
+#cart_info{
+	display: inline-block;
+	vertical-align: top;
+	float: right;
+	margin: 0 5px 0 0;
+	border: 1px solid #B0B0B0;
+	border-radius: 6px;
+	padding: 5px; 
+	text-align: center;
+	font-size: 16px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.count_cart,.money_cart{font-weight:bold;display:inline-block;}
+
+#cart_info a{
+	color: #605C5C;
+}
+
+#cart_info a:hover{
+	color: #F9A20B;
+}
+
+#page_header h4{
+	display: inline-block;
+	vertical-align: top;
+	margin: 25px 0 0 75px;
+}
+
+#page_footer{
+	margin-top: 10px;
+	height: 60px;
+	text-align: center;
+	background-color: #BABABA;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+
+#page_footer p{
+	padding-top: 20px;
+}
+
+#menu{
+	border-radius: 10px;
+	list-style: none;
+	background: #040283;
+	height: 50px;
+	margin-bottom: 10px;
+}
+
+#menu li {
+	display: inline-block;
+	/*width: 100px;*/
+	border-right: 1px solid #DEDEDE;
+	text-align: center;
+	padding: 11px 23px 11px 23px;
+}
+
+#menu li:last-child input[type="submit"]{
+	margin-left: 10px;
+}
+
+#menu li:last-child{border-right:none;}
+
+#menu li a{
+	color: #FFFFFF;
+	font-size: 18px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+#menu a:hover{
+	color: #F9A20B;
+}
+
+#products{
+	width: 100%;
+	padding: 0 5px 0 5px;
+}
+
+
+#short{
+	padding: 5px 0 5px 0;
+	display: inline-block;
+	border: 2px solid #8F8F8F;
+	border-radius: 6px;
+	width: 230px;
+	height: 250px;
+	text-align: center;
+	margin: 0 5px 0 0;
+	overflow: hidden;
+}
+
+#short h4{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+#short p,
+#result_order p{
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+#short img{
+	height: 80px;
+	width: 120px;
+}
+
+#details{
+	color: #616562;
+}
+
+#details:hover{
+	color: #F9A20B;
+}
+
+button{
+	width: 150px;
+	padding: 5px;
+	background-color: #969696;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+button:active{
+	background-color: #FA9600;
+}
+
+#long {
+	text-align: center;
+}
+
+#long img{
+	width: 200px;
+	height: 160px;
+}
+
+#long h4{
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+}
+
+#long p{
+	text-align: justify;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.error {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 18px;
+	padding: 5px;
+	text-align: center;
+}
+
+.error a{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.error a:hover{
+	color: #FA9600;
+}
+
+.ok {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 18px;
+	padding: 5px;
+	text-align: center;
+}
+
+#comments{
+	margin-top: 10px;
+	padding: 5px;
+	border: 2px solid #DBDBDB;
+}
+
+#comments h4{
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+
+#user_comment{
+	list-style: none;
+	/*margin-left: 25px;*/
+}
+
+#user_comment li{
+	margin-top: 5px;
+	background-color: #eee;
+	border: 2px solid #DBDBDB;
+}
+
+#user_comment li:hover{
+	background-color: #D7D7D6;
+	transition: 0.6s;
+}
+
+#user_comment li p{
+	margin-left: 10px;
+}
+
+#info_comment{
+	color: #1C1C1C;
+	font-family: 'Roboto', sans-serif;
+}
+
+#text_comment{
+	padding-left: 10px;
+	color: #525252;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+#call_add_comment{
+	display: none;
+	text-align: center;
+}
+
+#call_add_comment a{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 18px;
+	border-bottom: 1px dotted #000000;
+	color: #000000;
+	cursor: pointer;
+}
+
+#call_add_comment a:hover{
+	color: #FA9600;
+}
+
+#call_order{
+	display: none;
+	text-align: center;
+}
+
+#call_order a{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 18px;
+	border-bottom: 1px dotted #000000;
+	color: #000000;
+	cursor: pointer;
+}
+
+#call_order a:hover{
+	color: #FA9600;
+}
+
+#form_add_comment{
+	width: 40%;
+	text-align: center;
+	padding: 5px;
+	margin: 10px auto;
+	border: 2px solid #DBDBDB;
+	display: none;
+}
+
+input,
+textarea{
+	border-radius: 4px;
+	padding: 4px;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+input[type="submit"]{
+	padding: 5px;
+}
+
+#form_add_comment legend{
+	margin: 0 auto;
+}
+
+#loading_comment_view{
+	display: none;
+	text-align: center;
+}
+
+#loading_order{
+	display: none;
+	text-align: center;
+}
+
+#loading_cart{
+	text-align: center;
+}
+
+#loading_comment_add{
+	display: none;
+	position: absolute;
+	padding: 50px 0 0 170px;
+}
+
+.error_data{
+	border: 2px solid red;
+	outline: 0;
+}
+
+/* Table */
+/*table{
+	border: 2px solid black;
+	border-radius: 6px;
+}*/
+
+#number_cart{
+	font-weight: bold;
+}
+
+table td{
+	border: 1px solid #black;
+}
+
+
+/* /Table */
+
+em{
+	font-weight: bold;
+	color: #f00;
+}
+
+/* */
+
+#cart h4{
+	font-size: 18px;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+}
+
+#cart_tovar_view{
+	list-style: none;
+}
+
+#cart_tovar_view a{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#cart_tovar_view a:hover{
+	color: #FA9600;
+}
+
+#cart_tovar_view li{
+	margin: 5px auto;
+	padding: 5px;
+	width: 90%;
+	font-size: 18px;
+	/*margin-top: 5px;*/
+	background-color: #eee;
+	border: 2px solid #DBDBDB;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+#cart_tovar_view li:hover{
+	background-color: #D7D7D6;
+	transition: 0.6s;
+}
+
+#cart_tovar_view p{
+	margin-left: 10px;
+	display: inline-block;
+}
+
+#cart_price{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#cart_itogo{
+	padding-right: 20px;
+}
+
+#cart_delete{
+	/*padding-left: 10px;*/
+}
+
+#form_order legend{
+	margin: 0 auto;
+}
+
+#form_order{
+	width: 40%;
+	text-align: center;
+	padding: 5px;
+	margin: 10px auto;
+	border: 2px solid #DBDBDB;
+	display: none;
+}
+
+#form_order button{
+	margin-top: 5px;
+}
+/* */
